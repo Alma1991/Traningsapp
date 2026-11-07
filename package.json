@@ -1,0 +1,23 @@
+{
+  "name": "forma",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run audit:local && tsc && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "audit:local": "node scripts/audit-local.mjs",
+    "test": "node --test tests/audit-local.test.mjs"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "typescript": "5.6.3",
+    "vite": "6.4.5"
+  }
+}
