@@ -23,8 +23,11 @@ test('PPLUL: alla 30 pass följer källans setmål och bevarar befintlig histori
  const source=JSON.parse(fs.readFileSync('programs/FORMA_PPLUL_6_veckor.json','utf8').replace(/^\uFEFF/,''));
  const program=p.parseProgram(source);
  const old={id:'tidigare-pass',name:'Tidigare träning',started:'2026-01-01T10:00:00.000Z',finished:'2026-01-01T11:00:00.000Z',exerciseIds:['exercise-0'],sets:[{id:'tidigare-set',exerciseId:'exercise-0',weight:60,reps:8}]};
- let d={...structuredClone(storage.initial),programs:[program],sessions:[structuredClone(old)]};
- d=p.startProgram(d,program.id);
+ const before={...structuredClone(storage.initial),sessions:[structuredClone(old)]};
+ let d=p.startProgram(before,program);
+ assert.deepEqual(before.programs,[]);
+ assert.deepEqual(d.programs,[program]);
+ assert.ok(storage.validate(d));
  const weekly=[];
  for(let week=1;week<=6;week++){
   let sets=0,reps=0;
@@ -52,6 +55,16 @@ test('PPLUL: alla 30 pass följer källans setmål och bevarar befintlig histori
  assert.equal(d.runs[0].completed.length,30);
  assert.ok(d.runs[0].finished);
  assert.equal(p.nextSession(program,d.runs[0]),null);
+});
+test('katalogprogram med sparat id ersätter inte definitionen eller tidigare omgångar',()=>{
+ const before=p.startProgram(data(),'pplul-test');
+ const catalogProgram=p.parseProgram({...fixture(),name:'Uppdaterat program'});
+ assert.ok(p.duplicate(before.programs,catalogProgram));
+ const after=p.startProgram(before,catalogProgram);
+ assert.deepEqual(after.programs,before.programs);
+ assert.deepEqual(after.runs[0],before.runs[0]);
+ assert.equal(after.runs[1].programId,catalogProgram.id);
+ assert.ok(storage.validate(after));
 });
 test('platt import avvisar saknade och dubblerade pass samt felaktiga setmål',()=>{
  const source=JSON.parse(fs.readFileSync('programs/FORMA_PPLUL_6_veckor.json','utf8').replace(/^\uFEFF/,''));
