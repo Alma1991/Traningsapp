@@ -1,0 +1,1119 @@
+{
+  "name": "Push / Pull / Legs / Upper / Lower (PPLUL)",
+  "source": "Manuell avskrift från användarens StrengthLog-skärmbilder",
+  "weeks": 6,
+  "sessionsPerWeek": 5,
+  "note": "totalReps är antal lyft över samtliga set. repsPerSet är endast härlett när totalen är jämnt delbar; annars null. Övningsordning följer vänster kolumn uppifrån och ned, därefter höger kolumn. Kontrollera mot originalet innan import.",
+  "workouts": [
+    {
+      "week": 1,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 15,
+          "sets": 3,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 15,
+          "sets": 3,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 20,
+          "sets": 4,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 20,
+          "sets": 4,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 23,
+          "sets": 4,
+          "repsPerSet": null
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 35,
+          "sets": 5,
+          "repsPerSet": 7
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 1,
+      "focus": "Push",
+      "exercises": [
+        {
+          "name": "Uppåtlutande hantelpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bröstpress i maskin",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Sidolyft med kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Stående kabelflyes (Hög position)",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Tricepsextension över huvudet i kabel",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 2,
+      "focus": "Pull",
+      "exercises": [
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Latsdrag",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Latsdrag med raka armar",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Omvända maskinflyes",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 3,
+      "focus": "Legs",
+      "exercises": [
+        {
+          "name": "Benpress",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bulgarian split squat",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Benspark",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Sittande lårcurl",
+          "totalReps": 40,
+          "sets": 4,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Rumänska marklyft",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 4,
+      "focus": "Upper",
+      "exercises": [
+        {
+          "name": "Bänkpress",
+          "totalReps": 35,
+          "sets": 5,
+          "repsPerSet": 7
+        },
+        {
+          "name": "Chins",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Press",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Skivstångsrodd",
+          "totalReps": 24,
+          "sets": 4,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Liggande tricepsextension med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Skivstångscurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 5,
+      "focus": "Lower",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 35,
+          "sets": 5,
+          "repsPerSet": 7
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Liggande lårcurl",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Utfallsgång med skivstång",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        }
+      ]
+    }
+  ]
+}
