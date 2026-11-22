@@ -1,0 +1,18 @@
+{
+  "id": "exempel-tvaveckor-v1",
+  "name": "Exempelprogram – två veckor",
+  "weeks": [
+    {"name": "Vecka 1", "sessions": [
+      {"name": "Överkropp", "exercises": [
+        {"name": "Bänkpress", "sets": 3, "totalReps": 30},
+        {"name": "Hantelrodd", "sets": 3, "totalReps": 31}
+      ]}
+    ]},
+    {"name": "Vecka 2", "sessions": [
+      {"name": "Överkropp", "exercises": [
+        {"name": "Hantelrodd", "sets": 3, "totalReps": 32, "repsPerSet": [12, 10, 10]},
+        {"name": "Bänkpress", "sets": 3, "totalReps": 27}
+      ]}
+    ]}
+  ]
+}

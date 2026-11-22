@@ -42,3 +42,24 @@ Granskningen söker efter externa URL:er, fjärrresurser, vanliga nätverkskanal
 Det här är en konservativ statisk kontroll, inte en säkerhetsgaranti eller en nätverksbrandvägg. Den kan ge falska positiva fynd, exempelvis en extern URL som bara visas som text. Relativa fetch-anrop tillåts som resurshämtning, så kontrollen kan inte avgöra om en relativ adress i verkligheten går till ett API. Den kan inte säkert upptäcka alias till nätverksfunktioner, sammansatta eller kodade adresser, indirekt exekvering, service worker-logik som flyttats runt, alla möjliga HTML-attribut eller skadligt beteende i tredjepartspaket. Undantaget för service worker bygger på ett identifierat kodmönster och bevisar inte att alla kodvägar skyddas. Importer över granskningsgränsen och symboliska länkar följs inte.
 
 Kontrollen analyserar inte paketens innehåll eller produktionsbundlen, verifierar inte manuellt paketgodkännande och kan inte bevisa att träningsdata faktiskt sparas korrekt i IndexedDB. Mobilanpassning, installation, offlinebeteende och bevarande av befintliga funktioner kräver egna funktionskontroller. Ändrade regler och undantag ska alltid granskas tillsammans med appändringen.
+
+## Träningsprogram
+
+Program använder samma IndexedDB-tillstånd och träningslogg som fria pass. Definitioner finns i `programs`, omgångar i `runs` och vald omgång i `activeRunId`. Pågående pass innehåller en kopia av planeringen och en referens till omgång/vecka/pass. Avslut sparar historik och progression i samma IndexedDB-transaktion. Programbyte skapar en ny omgång och bevarar tidigare omgångar samt historik. Det kräver att pågående pass först avslutas eller kastas. Starta ny omgång efter sista passet görs uttryckligen av användaren.
+
+JSON-formatet visas i `examples/program.json` (ett litet demonstrationsprogram, inte PPLUL). Importera genom Program → välj fil → kontrollera alla veckor → Bekräfta import. Program måste ha ett stabilt `id`, `name` och en ordnad lista `weeks`. Varje vecka har `name` och `sessions`; varje pass har `name` och `exercises`. Övningar har `name`, `sets`, `totalReps` och valfritt `repsPerSet`. Den uttryckliga repetitionsfördelningen måste ha rätt antal set och summera till totalmålet. När totalmålet är ojämnt delbart och fördelning saknas visas endast totalmålet. Importen hittar dubbletter med samma id eller samma normaliserade innehåll. Gränser: 5 MB, 104 veckor, 100 pass per vecka och 100 övningar per pass.
+
+PPLUL finns i `programs/FORMA_PPLUL_6_veckor.json` och väljs med Välj PPLUL i Program. Den lokala filen byggs in i appen. Konverteraren stöder även det platta formatet med numeriska `weeks`, `sessionsPerWeek` och `workouts` med `week`, `session`, `focus` och `exercises`. Den kontrollerar att alla pass finns exakt en gång. Numeriska repsPerSet blir uttryckliga setmål; null lämnas ospecificerat. Alla 30 passen verifieras mot källfilen i testerna. Källfilens avskrift bör även kontrolleras mot originalet innan användning. Alla importerade program kan exporteras från programdetaljen.
+
+Säkerhetskopior innehåller program, alla omgångar och pågående pass. Äldre version 1-kopior utan programfält får tomma programlistor vid återställning. Återställning av backup har fortsatt sin befintliga funktion: den ersätter tillståndet efter bekräftelse. Exportera först om aktuell historik ska behållas.
+
+Manuell kontroll:
+1. Importera `examples/program.json`, granska ordningen och totalmålet 31, bekräfta. Försök importera igen: dubbletten ska avvisas.
+2. Välj program, starta program och starta pass. Registrera vikt och faktiska reps med Markera set klart. Stäng och öppna appen: Fortsätt pass ska visa sparade set. Fält som ännu inte registrerats som set sparas inte.
+3. Avsluta och spara. Kontrollera datum och nästa pass i vecka 2, samt resultatet i Historik och Utveckling.
+4. Avsluta sista passet. Kontrollera färdigmarkering; starta ny omgång och verifiera att gamla resultat finns kvar.
+5. Importera ett annat program och byt. Kontrollera att historik och tidigare omgångar finns kvar. Programbyte ska vara avstängt under pågående pass.
+6. Exportera backup med pågående pass. Återställ den och kontrollera set, program och framsteg. Prova också en äldre backup på en separat webbläsarprofil.
+7. Testa ogiltig JSON, saknade fält och felaktig repsPerSet. Testa mobilvy och offline efter första laddningen av produktionsbygget.
+
+`npm test` kör lokal granskningskontroll och programtester utan nya paket. Lagringstestet använder en liten IndexedDB-testdubbel; verklig beständighet, mobil interaktion och service worker behöver även manuell webbläsarkontroll. Godkänd lokal källkodsgranskning är inte bevis på fullständig säkerhet.

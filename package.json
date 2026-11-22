@@ -8,7 +8,8 @@
     "build": "npm run audit:local && tsc && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "audit:local": "node scripts/audit-local.mjs",
-    "test": "node --test tests/audit-local.test.mjs"
+    "test": "node --test tests/audit-local.test.mjs tests/programs.test.mjs",
+    "audit": "npm run audit:local"
   },
   "dependencies": {
     "react": "18.3.1",
