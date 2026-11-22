@@ -1,0 +1,863 @@
+{
+  "name": "FORMA Hybrid – 6 veckor",
+  "source": "Manuell avskrift från användarens skärmbilder av träningsprogrammet",
+  "weeks": 6,
+  "sessionsPerWeek": 4,
+  "note": "totalReps anger antal lyft totalt över angivet antal set (inte per set). repsPerSet är endast beräknat när totalen är jämnt delbar; null betyder att det saknas uppgift eller inte går att fördela jämnt. roundsShownInSource är endast ifyllt där x3/x4 uttryckligen syns i bilderna; betydelsen och relationen till set behöver verifieras före användning. Ingen automatisk multiplicering har gjorts. Övningsordningen följer vänster kolumn uppifrån och ned, sedan höger kolumn. Originalet bör kontrolleras före användning.",
+  "workouts": [
+    {
+      "week": 1,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Frontböj med raka armar",
+          "totalReps": 45,
+          "sets": 3,
+          "repsPerSet": 15
+        },
+        {
+          "name": "Frontböj",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 15,
+          "sets": 3,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Chins med omvänt grepp",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Waiters walk med kettlebell",
+          "totalReps": null,
+          "sets": 4,
+          "repsPerSet": null
+        },
+        {
+          "name": "Bergsklättrare",
+          "totalReps": 60,
+          "sets": 3,
+          "repsPerSet": 20
+        }
+      ],
+      "roundsShownInSource": 3
+    },
+    {
+      "week": 1,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Box jump",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 9,
+          "sets": 3,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Press",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Sotspress bakom nacke",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        }
+      ],
+      "roundsShownInSource": 3
+    },
+    {
+      "week": 1,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Step-up",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Box jump",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Armhävningar med fötter i ringar",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Kettlebellsving",
+          "totalReps": 100,
+          "sets": 4,
+          "repsPerSet": 25
+        },
+        {
+          "name": "Hängande L-sit",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ],
+      "roundsShownInSource": 3
+    },
+    {
+      "week": 1,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Promenad",
+          "totalReps": null,
+          "sets": 1,
+          "repsPerSet": null
+        }
+      ],
+      "roundsShownInSource": 3
+    },
+    {
+      "week": 2,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Stötdrag",
+          "totalReps": 18,
+          "sets": 6,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Bulgarian split squat (med kroppsvikt)",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Pushpress",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Roddmaskin",
+          "totalReps": null,
+          "sets": 8,
+          "repsPerSet": null
+        }
+      ],
+      "roundsShownInSource": 3
+    },
+    {
+      "week": 2,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Enbensmarklyft med kettlebell",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Knäböj",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "TRX rodd",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Ball slams",
+          "totalReps": 50,
+          "sets": 1,
+          "repsPerSet": 50
+        }
+      ],
+      "roundsShownInSource": 4
+    },
+    {
+      "week": 2,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Step-up",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 8,
+          "sets": 4,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Chest to bar",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "TRX rodd",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Armhävningar",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Armhävningar på knäna",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ],
+      "roundsShownInSource": 4
+    },
+    {
+      "week": 2,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Roddmaskin",
+          "totalReps": null,
+          "sets": 5,
+          "repsPerSet": null
+        },
+        {
+          "name": "Armhävningar",
+          "totalReps": 100,
+          "sets": 5,
+          "repsPerSet": 20
+        },
+        {
+          "name": "Kettlebellsving",
+          "totalReps": 150,
+          "sets": 5,
+          "repsPerSet": 30
+        },
+        {
+          "name": "Sit-up",
+          "totalReps": 200,
+          "sets": 5,
+          "repsPerSet": 40
+        },
+        {
+          "name": "Knäböj (med kroppsvikt)",
+          "totalReps": 250,
+          "sets": 5,
+          "repsPerSet": 50
+        }
+      ],
+      "roundsShownInSource": 4
+    },
+    {
+      "week": 3,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Windmills med kettlebell",
+          "totalReps": 5,
+          "sets": 1,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Frontböj med raka armar",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Frontböj",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Press",
+          "totalReps": 16,
+          "sets": 4,
+          "repsPerSet": 4
+        },
+        {
+          "name": "Farmers walk",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Get-up (uppvärmning)",
+          "totalReps": 50,
+          "sets": 1,
+          "repsPerSet": 50
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Box jump",
+          "totalReps": 9,
+          "sets": 3,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Bulgarian split squat (med kroppsvikt)",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 6,
+          "sets": 3,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Kettlebellsving",
+          "totalReps": 300,
+          "sets": 1,
+          "repsPerSet": 300
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Enbensmarklyft med kettlebell",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 36,
+          "sets": 6,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Chins med omvänt grepp",
+          "totalReps": null,
+          "sets": 2,
+          "repsPerSet": null
+        },
+        {
+          "name": "Ball slams",
+          "totalReps": 50,
+          "sets": 1,
+          "repsPerSet": 50
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Löpning",
+          "totalReps": null,
+          "sets": 10,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Windmills med kettlebell",
+          "totalReps": 15,
+          "sets": 3,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Pushpress",
+          "totalReps": 18,
+          "sets": 6,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Knäböj",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Bergsklättrare",
+          "totalReps": 80,
+          "sets": 4,
+          "repsPerSet": 20
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Frivändning",
+          "totalReps": 1,
+          "sets": 1,
+          "repsPerSet": 1
+        },
+        {
+          "name": "Stötdrag",
+          "totalReps": 9,
+          "sets": 3,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Sotspress bakom nacke",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 9,
+          "sets": 3,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Dödsmarch med hantlar",
+          "totalReps": 60,
+          "sets": 3,
+          "repsPerSet": 20
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Box jump",
+          "totalReps": 12,
+          "sets": 6,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Pausböj",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Press",
+          "totalReps": 32,
+          "sets": 4,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Chins med omvänt grepp",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Get-up (uppvärmning)",
+          "totalReps": 50,
+          "sets": 1,
+          "repsPerSet": 50
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Sicksack-sprint",
+          "totalReps": null,
+          "sets": 10,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Utfall (med kroppsvikt)",
+          "totalReps": 50,
+          "sets": 1,
+          "repsPerSet": 50
+        },
+        {
+          "name": "Farmers walk",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Frontböj med raka armar",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Frontböj",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Waiters walk med kettlebell",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Pushpress",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Hängande knälyft",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Step-up",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Windmills med kettlebell",
+          "totalReps": 15,
+          "sets": 3,
+          "repsPerSet": 5
+        },
+        {
+          "name": "TRX rodd",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 10,
+          "sets": 5,
+          "repsPerSet": 2
+        },
+        {
+          "name": "Marklyft",
+          "totalReps": 25,
+          "sets": 5,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Knäböj (med kroppsvikt)",
+          "totalReps": null,
+          "sets": 8,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Roddmaskin",
+          "totalReps": null,
+          "sets": 5,
+          "repsPerSet": null
+        },
+        {
+          "name": "Armhävningar",
+          "totalReps": 100,
+          "sets": 5,
+          "repsPerSet": 20
+        },
+        {
+          "name": "Kettlebellsving",
+          "totalReps": 150,
+          "sets": 5,
+          "repsPerSet": 30
+        },
+        {
+          "name": "Sit-up",
+          "totalReps": 200,
+          "sets": 5,
+          "repsPerSet": 40
+        },
+        {
+          "name": "Knäböj (med kroppsvikt)",
+          "totalReps": 250,
+          "sets": 5,
+          "repsPerSet": 50
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 1,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Cuban press",
+          "totalReps": 30,
+          "sets": 3,
+          "repsPerSet": 10
+        },
+        {
+          "name": "Bulgarian split squat (med kroppsvikt)",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Armhävningar med fötter i ringar",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Chins med omvänt grepp",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        },
+        {
+          "name": "Statiskt håll i ringar",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 2,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Knäböj",
+          "totalReps": 1,
+          "sets": 2,
+          "repsPerSet": null
+        },
+        {
+          "name": "Bänkpress",
+          "totalReps": 1,
+          "sets": 2,
+          "repsPerSet": null
+        },
+        {
+          "name": "Enbensmarklyft med kettlebell",
+          "totalReps": 24,
+          "sets": 3,
+          "repsPerSet": 8
+        },
+        {
+          "name": "Hantelrodd",
+          "totalReps": 18,
+          "sets": 3,
+          "repsPerSet": 6
+        },
+        {
+          "name": "Farmers walk",
+          "totalReps": null,
+          "sets": 3,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 3,
+      "focus": "Hybrid",
+      "exercises": [
+        {
+          "name": "Windmills med kettlebell",
+          "totalReps": 20,
+          "sets": 4,
+          "repsPerSet": 5
+        },
+        {
+          "name": "Frivändning",
+          "totalReps": 1,
+          "sets": 1,
+          "repsPerSet": 1
+        },
+        {
+          "name": "Stötdrag",
+          "totalReps": 12,
+          "sets": 4,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Pausböj",
+          "totalReps": 15,
+          "sets": 5,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Press",
+          "totalReps": 9,
+          "sets": 3,
+          "repsPerSet": 3
+        },
+        {
+          "name": "Armhävningar",
+          "totalReps": 55,
+          "sets": 10,
+          "repsPerSet": null
+        },
+        {
+          "name": "Kettlebellsving",
+          "totalReps": 55,
+          "sets": 10,
+          "repsPerSet": null
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "session": 4,
+      "focus": "Kondition / återhämtning",
+      "exercises": [
+        {
+          "name": "Löpning",
+          "totalReps": null,
+          "sets": 1,
+          "repsPerSet": null
+        }
+      ]
+    }
+  ]
+}

@@ -45,9 +45,9 @@ Kontrollen analyserar inte paketens innehåll eller produktionsbundlen, verifier
 
 ## Träningsprogram
 
-Program använder samma IndexedDB-tillstånd och träningslogg som fria pass. Definitioner finns i `programs`, omgångar i `runs` och vald omgång i `activeRunId`. Pågående pass innehåller en kopia av planeringen och en referens till omgång/vecka/pass. Avslut sparar historik och progression i samma IndexedDB-transaktion. Programbyte skapar en ny omgång och bevarar tidigare omgångar samt historik. Det kräver att pågående pass först avslutas eller kastas. Starta ny omgång efter sista passet görs uttryckligen av användaren.
+Program använder samma IndexedDB-tillstånd och träningslogg som fria pass. Definitioner finns i `programs`, omgångar i `runs` och följda omgångar i `followedRunIds`. Vid läsning av äldre data blir omgången i `activeRunId` ett följt program. Pågående pass innehåller en kopia av planeringen och en referens till omgång, vecka och pass. Avslut sparar historik och progression i samma IndexedDB-transaktion.
 
-Programmen i projektets mapp `programs/` visas direkt under **Program → Välj program**. PPLUL (6 veckor, 30 pass) ingår. Välj ett program för att se veckor och pass, och använd **Starta program** för att påbörja en omgång. Första gången ett katalogprogram startas sparas dess definition tillsammans med omgången. Tidigare sparade program visas också. Om katalogen har samma id eller innehåll visas den sparade versionen.
+Programmen i projektets mapp `programs/` visas direkt under **Program → Välj program**. PPLUL (6 veckor, 30 pass) och FORMA Hybrid (6 veckor, 24 pass) ingår. Använd **Följ program** för att lägga till ett program under **Mina träningsprogram** på Översikt. Varje följt program har egen progression. Om du slutar följa ett program sparas omgången och återupptas när du följer det igen. Efter sista passet kan du välja att starta en ny omgång. Första gången du följer ett katalogprogram sparas dess definition tillsammans med omgången. Om katalogen har samma id eller innehåll visas den sparade versionen.
 
 Lägg till ett program i VS Code genom att skapa en JSON-fil direkt i `programs/`. Använd `examples/program.json` som mall. Exempelfilen ligger utanför katalogen och visas först om den kopieras dit. Ge programmet ett unikt och stabilt `id`, ett `name` och en ordnad lista `weeks`. Varje vecka har `name` och `sessions`, varje pass har `name` och `exercises`. Övningar har `name`, `sets`, `totalReps` och valfritt `repsPerSet`. Den uttryckliga fördelningen måste ha rätt antal set och summera till totalmålet. Gränserna är 104 veckor, 100 pass per vecka och 100 övningar per pass.
 
@@ -60,7 +60,7 @@ Manuell kontroll:
 2. Välj program, starta program och starta pass. Registrera vikt och faktiska reps med Markera set klart. Stäng och öppna appen: Fortsätt pass ska visa sparade set. Fält som ännu inte registrerats som set sparas inte.
 3. Avsluta och spara. Kontrollera datum och nästa pass i vecka 2, samt resultatet i Historik och Utveckling.
 4. Avsluta sista passet. Kontrollera färdigmarkering; starta ny omgång och verifiera att gamla resultat finns kvar.
-5. Lägg till ett annat program i projektets programs-mapp och byt till det. Kontrollera att historik och tidigare omgångar finns kvar. Programbyte ska vara avstängt under pågående pass.
+5. Följ PPLUL och FORMA Hybrid samtidigt. Kontrollera att framsteg bara ändras för programmet vars pass avslutas. Sluta följa ett program, bekräfta och följ det igen för att kontrollera att progressionen finns kvar.
 6. Exportera backup med pågående pass. Återställ den och kontrollera set, program och framsteg. Prova också en äldre backup på en separat webbläsarprofil.
 7. Testa mobilvy och offline efter första laddningen av produktionsbygget.
 
