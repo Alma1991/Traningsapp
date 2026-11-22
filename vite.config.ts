@@ -1,2 +1,9 @@
 import { defineConfig } from 'vite';
-export default defineConfig({ base: './' });
+import { version } from './package.json';
+
+export default defineConfig({
+  base: '/Traningsapp/',
+  define: {
+    __APP_VERSION__: JSON.stringify(version),
+  },
+});
