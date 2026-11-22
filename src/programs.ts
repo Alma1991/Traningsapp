@@ -40,11 +40,14 @@ export function nextSession(p: Program, run: Run) {
  for (let week=0;week<p.weeks.length;week++) for(let session=0;session<p.weeks[week].sessions.length;session++) if(!run.completed.some(c=>c.week===week && c.session===session)) return {week,session,workout:p.weeks[week].sessions[session]};
  return null;
 }
-export function startProgram(d: Data, programId: string): Data {
+export function startProgram(d: Data, selection: string | Program): Data {
  if(d.active) throw new Error('Avsluta eller kasta pågående pass innan du byter program.');
- if(!d.programs.some(p=>p.id===programId)) throw new Error('Programmet finns inte.');
+ const programId = typeof selection === 'string' ? selection : selection.id;
+ const stored = d.programs.some(p => p.id === programId);
+ if (!stored && typeof selection === 'string') throw new Error('Programmet finns inte.');
+ const programs = !stored && typeof selection !== 'string' ? [...d.programs, selection] : d.programs;
  const run: Run={id:crypto.randomUUID(),programId,started:new Date().toISOString(),completed:[]};
- return {...d,runs:[...d.runs,run],activeRunId:run.id};
+ return {...d,programs,runs:[...d.runs,run],activeRunId:run.id};
 }
 export function startProgramSession(d: Data): Data {
  if(d.active) return d;

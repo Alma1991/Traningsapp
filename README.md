@@ -47,19 +47,21 @@ Kontrollen analyserar inte paketens innehåll eller produktionsbundlen, verifier
 
 Program använder samma IndexedDB-tillstånd och träningslogg som fria pass. Definitioner finns i `programs`, omgångar i `runs` och vald omgång i `activeRunId`. Pågående pass innehåller en kopia av planeringen och en referens till omgång/vecka/pass. Avslut sparar historik och progression i samma IndexedDB-transaktion. Programbyte skapar en ny omgång och bevarar tidigare omgångar samt historik. Det kräver att pågående pass först avslutas eller kastas. Starta ny omgång efter sista passet görs uttryckligen av användaren.
 
-JSON-formatet visas i `examples/program.json` (ett litet demonstrationsprogram, inte PPLUL). Importera genom Program → välj fil → kontrollera alla veckor → Bekräfta import. Program måste ha ett stabilt `id`, `name` och en ordnad lista `weeks`. Varje vecka har `name` och `sessions`; varje pass har `name` och `exercises`. Övningar har `name`, `sets`, `totalReps` och valfritt `repsPerSet`. Den uttryckliga repetitionsfördelningen måste ha rätt antal set och summera till totalmålet. När totalmålet är ojämnt delbart och fördelning saknas visas endast totalmålet. Importen hittar dubbletter med samma id eller samma normaliserade innehåll. Gränser: 5 MB, 104 veckor, 100 pass per vecka och 100 övningar per pass.
+Programmen i projektets mapp `programs/` visas direkt under **Program → Välj program**. PPLUL (6 veckor, 30 pass) ingår. Välj ett program för att se veckor och pass, och använd **Starta program** för att påbörja en omgång. Första gången ett katalogprogram startas sparas dess definition tillsammans med omgången. Tidigare sparade program visas också. Om katalogen har samma id eller innehåll visas den sparade versionen.
 
-PPLUL finns i `programs/FORMA_PPLUL_6_veckor.json` och väljs med Välj PPLUL i Program. Den lokala filen byggs in i appen. Konverteraren stöder även det platta formatet med numeriska `weeks`, `sessionsPerWeek` och `workouts` med `week`, `session`, `focus` och `exercises`. Den kontrollerar att alla pass finns exakt en gång. Numeriska repsPerSet blir uttryckliga setmål; null lämnas ospecificerat. Alla 30 passen verifieras mot källfilen i testerna. Källfilens avskrift bör även kontrolleras mot originalet innan användning. Alla importerade program kan exporteras från programdetaljen.
+Lägg till ett program i VS Code genom att skapa en JSON-fil direkt i `programs/`. Använd `examples/program.json` som mall. Exempelfilen ligger utanför katalogen och visas först om den kopieras dit. Ge programmet ett unikt och stabilt `id`, ett `name` och en ordnad lista `weeks`. Varje vecka har `name` och `sessions`, varje pass har `name` och `exercises`. Övningar har `name`, `sets`, `totalReps` och valfritt `repsPerSet`. Den uttryckliga fördelningen måste ha rätt antal set och summera till totalmålet. Gränserna är 104 veckor, 100 pass per vecka och 100 övningar per pass.
+
+PPLUL-filen använder också det stödda platta formatet med numeriska `weeks`, `sessionsPerWeek` och `workouts` med `week`, `session`, `focus` och `exercises`. Alla pass måste finnas exakt en gång. Numeriska `repsPerSet` blir uttryckliga setmål och `null` lämnas ospecificerat. Alla 30 passen verifieras mot källfilen i testerna. Program kan exporteras från programdetaljen.
 
 Säkerhetskopior innehåller program, alla omgångar och pågående pass. Äldre version 1-kopior utan programfält får tomma programlistor vid återställning. Återställning av backup har fortsatt sin befintliga funktion: den ersätter tillståndet efter bekräftelse. Exportera först om aktuell historik ska behållas.
 
 Manuell kontroll:
-1. Importera `examples/program.json`, granska ordningen och totalmålet 31, bekräfta. Försök importera igen: dubbletten ska avvisas.
+1. Öppna Program med en tom profil. Kontrollera att PPLUL visas direkt under Välj program med 6 veckor och 30 pass.
 2. Välj program, starta program och starta pass. Registrera vikt och faktiska reps med Markera set klart. Stäng och öppna appen: Fortsätt pass ska visa sparade set. Fält som ännu inte registrerats som set sparas inte.
 3. Avsluta och spara. Kontrollera datum och nästa pass i vecka 2, samt resultatet i Historik och Utveckling.
 4. Avsluta sista passet. Kontrollera färdigmarkering; starta ny omgång och verifiera att gamla resultat finns kvar.
-5. Importera ett annat program och byt. Kontrollera att historik och tidigare omgångar finns kvar. Programbyte ska vara avstängt under pågående pass.
+5. Lägg till ett annat program i projektets programs-mapp och byt till det. Kontrollera att historik och tidigare omgångar finns kvar. Programbyte ska vara avstängt under pågående pass.
 6. Exportera backup med pågående pass. Återställ den och kontrollera set, program och framsteg. Prova också en äldre backup på en separat webbläsarprofil.
-7. Testa ogiltig JSON, saknade fält och felaktig repsPerSet. Testa mobilvy och offline efter första laddningen av produktionsbygget.
+7. Testa mobilvy och offline efter första laddningen av produktionsbygget.
 
 `npm test` kör lokal granskningskontroll och programtester utan nya paket. Lagringstestet använder en liten IndexedDB-testdubbel; verklig beständighet, mobil interaktion och service worker behöver även manuell webbläsarkontroll. Godkänd lokal källkodsgranskning är inte bevis på fullständig säkerhet.
